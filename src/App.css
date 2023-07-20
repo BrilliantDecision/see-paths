@@ -9,3 +9,8 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.textLatLng {
+  font-weight: bold;
+  user-select: none;
+}
