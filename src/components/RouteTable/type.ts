@@ -1,10 +1,7 @@
-export interface LatLng {
-  lat: number;
-  lng: number;
-}
+import { LatLngLiteral } from "leaflet";
 
 export interface RowEntity {
   key: string;
   path: string;
-  [key: `point${number}`]: LatLng;
+  [key: `point${number}`]: LatLngLiteral;
 }

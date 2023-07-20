@@ -1,3 +1,8 @@
 .rowCursor {
   cursor: pointer;
 }
+
+.rootTableContainer {
+  display: flex;
+  flex-shrink: 0;
+}

@@ -1,8 +1,10 @@
 import "./App.css";
 import { RouteTable } from "./components/RouteTable/RouteTable";
-import { LatLng, RowEntity } from "./components/RouteTable/type";
+import { RowEntity } from "./components/RouteTable/type";
 import type { ColumnGroupType, ColumnType, ColumnsType } from "antd/es/table";
 import { data } from "./data";
+import { Map } from "./components/Map/Map";
+import { LatLng } from "leaflet";
 
 function App() {
   const renderCoordinates = (latLng: LatLng) => (
@@ -34,6 +36,7 @@ function App() {
   return (
     <div className="App">
       <RouteTable columns={columns} data={data} />
+      <Map />
     </div>
   );
 }
